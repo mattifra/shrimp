@@ -64,7 +64,7 @@ module Shrimp
     end
 
     def already_rendered?
-      File.exists?(render_to)
+      File.exist?(render_to)
     end
 
     def up_to_date?(ttl = 30)

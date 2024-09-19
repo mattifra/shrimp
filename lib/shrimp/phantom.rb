@@ -97,7 +97,7 @@ module Shrimp
       @options = Shrimp.configuration.default_options.merge(options)
       @cookies = cookies
       @outfile = File.expand_path(outfile) if outfile
-      raise NoExecutableError.new unless File.exists?(Shrimp.configuration.phantomjs)
+      raise NoExecutableError.new unless File.exist?(Shrimp.configuration.phantomjs)
     end
 
     # Public: renders to pdf
